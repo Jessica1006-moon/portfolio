@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jessica Luo — independent photographer." />
+    <title>Jessica Luo — Photographer</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="wordmark" href="#top">Jessica Luo</a>
+      <nav aria-label="Explore sections">
+        <a class="nav-current" href="#top" aria-current="page">Portfolio <span>1</span></a>
+        <a href="#about" aria-label="About" title="About">2</a>
+        <a href="mailto:luojessica82@gmail.com" aria-label="Contact" title="Contact">3</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-stage" role="group" tabindex="0" aria-label="Photo sphere. Move the mouse or drag to rotate; use arrow keys to rotate; click a photo to enlarge."></div>
+        <h1 id="hero-title" class="visually-hidden">Jessica Luo</h1>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about-label" id="about-title">About</div>
+        <p class="about-statement">A storyteller through imagery.</p>
+      </section>
+
+      <section class="work" id="work" aria-labelledby="work-title">
+        <div class="work-heading">
+          <h2 id="work-title">Selected Work</h2>
+          <span>43 photographs</span>
+        </div>
+        <div class="masonry"></div>
+      </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project image" hidden>
+      <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+      <button class="lightbox-prev" type="button" aria-label="Previous image">←</button>
+      <figure>
+        <img alt="" />
+        <figcaption><span></span><span></span></figcaption>
+      </figure>
+      <button class="lightbox-next" type="button" aria-label="Next image">→</button>
+    </div>
+
+    <footer>
+      <a href="mailto:luojessica82@gmail.com">luojessica82@gmail.com</a>
+      <span>© 2026 Jessica Luo</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+    <script src="./photo-manifest.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
